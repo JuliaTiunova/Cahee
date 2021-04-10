@@ -12,9 +12,15 @@
 .home__wrapper {
   background: url(../img/header-bg.png);
   min-height: 1000px;
-  padding: 0 150px;
+  padding: 50px 150px 70px;
 }
 
 .about__wrapper {
   background-color: #00b1b1;
+  padding: 70px 150px 70px 111px;
+}
+
+.services__wrapper {
+  background-color: #70bfff;
+  padding: 100px 150px 150px;
 }
