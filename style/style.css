@@ -53,3 +53,18 @@
   background-color: #b07cf7;
   padding: 100px 150px 120px;
 }
+
+.contact__wrapper {
+  background-image: url(../img/contact-bg.png);
+  padding: 100px 150px 120px;
+}
+
+.footer__bottom-line {
+  background-color: #262626;
+  padding: 36px 150px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
