@@ -14,3 +14,7 @@
   min-height: 1000px;
   padding: 0 150px;
 }
+
+.about__wrapper {
+  background-color: #00b1b1;
+}
