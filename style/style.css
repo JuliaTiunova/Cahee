@@ -101,9 +101,8 @@ a {
 
 .button--orange:hover {
   background-color: #fff;
-  border: 1px solid #ff6033;
   color: #ff6033;
-  box-shadow: none;
+  box-shadow: 0 0 1px 1px #ff6033;
 }
 
 .scroll {
@@ -319,7 +318,116 @@ a {
 
 .blog-wrapper {
   background-color: #b07cf7;
-  padding: 100px 150px 120px;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.blog__header {
+  text-align: center;
+}
+
+.blog__title {
+  margin-bottom: 30px;
+}
+
+.blog__text {
+  width: 600px;
+  margin: 0 auto 50px;
+}
+
+.blog__container {
+  margin-bottom: 50px;
+}
+
+.article {
+  background-size: cover;
+  height: 310px;
+  box-shadow: 2px 2px 5px #00000050;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.blog__article-1 {
+  background: url(../img/blog-thumbnail.png) center center no-repeat;
+}
+.blog__article-1:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../img/blog-thumbnail.png) center center no-repeat;
+}
+
+.blog__article-2 {
+  background: url(../img/blog-thumbnail2.png) center center no-repeat;
+}
+.blog__article-2:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../img/blog-thumbnail2.png) center center no-repeat;
+}
+
+.blog__article-3 {
+  background: url(../img/blog-thumbnail3.png) center center no-repeat;
+}
+.blog__article-3:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../img/blog-thumbnail3.png) center center no-repeat;
+}
+
+.blog__date-block {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 30px;
+  left: 30px;
+  background: #26262650;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.date-block {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 19px;
+  color: #fff;
+}
+.date-block span {
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.blog__article-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.blog__article-author {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.blog__button {
+  text-align: center;
 }
 
 .contact__wrapper {
