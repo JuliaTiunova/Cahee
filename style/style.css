@@ -432,7 +432,86 @@ a {
 
 .contact__wrapper {
   background-image: url(../img/contact-bg.png);
-  padding: 100px 150px 120px;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.contact__header {
+  text-align: center;
+}
+
+.contact__title {
+  margin-bottom: 30px;
+}
+
+.contact__text {
+  width: 350px;
+  margin: 0 auto 50px;
+}
+
+.footer__form input,
+.footer__form textarea {
+  width: 100%;
+  background: rgba(0, 196, 196, 0.5);
+  border: none;
+}
+
+.footer__form textarea {
+  resize: none;
+}
+
+.footer__form input::-webkit-input-placeholder,
+.footer__form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.footer__form input:focus,
+.footer__form textarea:focus {
+  background-color: #00c4c4;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  border-left: 5.5px solid #355b82;
+  outline: none;
+}
+
+.footer__form input:not(:last-child) {
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.footer__form input[placeholder],
+.footer__form textarea[placeholder] {
+  padding-left: 22px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.footer__form textarea[placeholder] {
+  padding-top: 16px;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-item a {
+  color: #262626;
+}
+
+.info-item {
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+
+.info__title {
+  font-weight: bold;
+}
+
+.info__text {
+  font-weight: 400;
 }
 
 .footer__bottom-line {
@@ -443,4 +522,13 @@ a {
 .footer__container {
   display: flex;
   justify-content: space-between;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b9b9b9;
+}
+
+.footer__author span {
+  font-weight: 700;
+  color: #ff2a58;
 }
