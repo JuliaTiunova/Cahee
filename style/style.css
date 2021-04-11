@@ -456,6 +456,10 @@ a {
   border: none;
 }
 
+.footer__form textarea {
+  resize: none;
+}
+
 .footer__form input::-webkit-input-placeholder,
 .footer__form textarea::-webkit-input-placeholder {
   color: #fff;
@@ -488,6 +492,28 @@ a {
   padding-top: 16px;
 }
 
+.info-list {
+  list-style: none;
+}
+
+.info-item a {
+  color: #262626;
+}
+
+.info-item {
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+
+.info__title {
+  font-weight: bold;
+}
+
+.info__text {
+  font-weight: 400;
+}
+
 .footer__bottom-line {
   background-color: #262626;
   padding: 36px 150px;
@@ -496,4 +522,13 @@ a {
 .footer__container {
   display: flex;
   justify-content: space-between;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b9b9b9;
+}
+
+.footer__author span {
+  font-weight: 700;
+  color: #ff2a58;
 }
