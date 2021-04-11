@@ -18,6 +18,7 @@
   background: url(../img/header-bg.png);
   min-height: 1000px;
   padding-top: 50px;
+  position: relative;
 }
 
 .home__header {
@@ -56,6 +57,59 @@ a {
   font-size: 16px;
   line-height: 27px;
   color: #262626;
+}
+
+.home__content {
+  color: #262626;
+  margin-top: 282px;
+}
+
+.home__text {
+  margin-top: 15px;
+  margin-bottom: 28px;
+}
+
+.title--small {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px 25px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button--orange {
+  background-color: #ff6033;
+}
+
+.button--orange:hover {
+  background-color: #fff;
+  border: 1px solid #ff6033;
+  color: #ff6033;
+  box-shadow: none;
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 70px;
 }
 
 .about__wrapper {
