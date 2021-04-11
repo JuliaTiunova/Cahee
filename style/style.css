@@ -114,7 +114,41 @@ a {
 
 .about__wrapper {
   background-color: #00b1b1;
-  padding: 70px 150px 70px 111px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+
+.about__img {
+  margin-left: -69px;
+}
+
+.about__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__title {
+  margin-bottom: 14px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 106px;
+}
+
+.title--white {
+  color: #fff;
+}
+
+.about__text {
+  margin-bottom: 14px;
+}
+
+.text--white {
+  color: #fff;
 }
 
 .services__wrapper {
