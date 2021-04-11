@@ -173,7 +173,7 @@ a {
 .services__item:hover .services__button,
 .services__item:hover {
   cursor: pointer;
-  background-color: rgb(238, 237, 237);
+  background-color: rgb(245, 245, 245);
 }
 
 .list-image__wrapper {
@@ -183,6 +183,23 @@ a {
 
 .services__list-image {
   display: inline-block;
+  fill: #262626;
+}
+
+.services__list-image--cart:hover {
+  fill: #c3a0f3;
+}
+
+.services__list-image--plant:hover {
+  fill: #00b176;
+}
+
+.services__list-image--planet:hover {
+  fill: #0e8faf;
+}
+
+.services__list-image--carrot:hover {
+  fill: #ff9c4a;
 }
 
 .services__button {
