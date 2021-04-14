@@ -361,6 +361,7 @@ a {
           rgba(0, 0, 0, 0.9) 100%
         ),
         url(../img/blog-thumbnail.png) center center no-repeat;
+      background-size: cover;
     }
   }
   &__article-2 {
@@ -373,6 +374,7 @@ a {
           rgba(0, 0, 0, 0.9) 100%
         ),
         url(../img/blog-thumbnail2.png) center center no-repeat;
+      background-size: cover;
     }
   }
   &__article-3 {
@@ -385,6 +387,7 @@ a {
           rgba(0, 0, 0, 0.9) 100%
         ),
         url(../img/blog-thumbnail3.png) center center no-repeat;
+      background-size: cover;
     }
   }
   &__date-block {
@@ -394,7 +397,7 @@ a {
     height: 60px;
     top: 30px;
     left: 30px;
-    background: $primary-text-color 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     display: flex;
     align-items: center;
