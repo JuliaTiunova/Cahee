@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap");
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../font/icomoon.eot?ixzwqi");
+  src: url("../font/icomoon.eot?ixzwqi#iefix") format("embedded-opentype"),
+    url("../font/icomoon.ttf?ixzwqi") format("truetype"),
+    url("../font/icomoon.woff?ixzwqi") format("woff"),
+    url("../font/icomoon.svg?ixzwqi#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Carrot:before {
+  content: "\e900";
+}
+.icon-Cart:before {
+  content: "\e901";
+}
+.icon-Planet:before {
+  content: "\e902";
+}
+.icon-Plant:before {
+  content: "\e903";
+}
+
+$raleway: "Raleway", sans-serif;
