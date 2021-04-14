@@ -220,22 +220,10 @@ a {
     background-color: darken($color: #fff, $amount: 7%);
   }
 
-  &__list-image {
+  &__list {
     display: inline-block;
-    fill: $primary-text-color;
-
-    &--cart:hover {
-      fill: $background-color-violet;
-    }
-    &--plant:hover {
-      fill: $background-color-green;
-    }
-    &--planet:hover {
-      fill: $background-color-blue;
-    }
-    &--carrot:hover {
-      fill: $orange;
-    }
+    font-family: $icomoon;
+    font-size: 45px;
   }
   &__button {
     @include center();
@@ -259,6 +247,20 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+.icon {
+  &-Cart:hover {
+    color: $background-color-violet;
+  }
+  &-Plant:hover {
+    color: $background-color-green;
+  }
+  &-Planet:hover {
+    color: $background-color-blue;
+  }
+  &-Carrot:hover {
+    color: $orange;
   }
 }
 .list-image__wrapper {

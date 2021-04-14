@@ -221,21 +221,10 @@ a {
   cursor: pointer;
   background-color: #ededed;
 }
-.services__list-image {
+.services__list {
   display: inline-block;
-  fill: #262626;
-}
-.services__list-image--cart:hover {
-  fill: #b07cf7;
-}
-.services__list-image--plant:hover {
-  fill: #06bbbb;
-}
-.services__list-image--planet:hover {
-  fill: #70bfff;
-}
-.services__list-image--carrot:hover {
-  fill: #ff6033;
+  font-family: "icomoon";
+  font-size: 45px;
 }
 .services__button {
   text-align: center;
@@ -259,6 +248,19 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.icon-Cart:hover {
+  color: #b07cf7;
+}
+.icon-Plant:hover {
+  color: #06bbbb;
+}
+.icon-Planet:hover {
+  color: #70bfff;
+}
+.icon-Carrot:hover {
+  color: #ff6033;
 }
 
 .list-image__wrapper {
