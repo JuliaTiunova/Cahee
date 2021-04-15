@@ -843,9 +843,58 @@ img {
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .menu {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .services__menu {
+    margin-bottom: 30px;
+  }
+
+  .subscribe {
+    text-align: center;
+  }
+  .subscribe__button {
+    margin-top: 20px;
+  }
+
+  .gallery__container {
+    margin-bottom: 15px;
+  }
+
+  .contact__info {
+    margin-top: 20px;
+  }
+
+  .info-item {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .article {
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 1200px) {
