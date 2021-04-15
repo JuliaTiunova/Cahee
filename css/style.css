@@ -848,4 +848,9 @@ img {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .menu {
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
