@@ -569,6 +569,14 @@ img {
 }
 
 @media (max-width: 992px) {
+  .home {
+    &__content {
+      margin: 100px 0 150px;
+    }
+  }
+  .scroll {
+    display: none;
+  }
   .services {
     @include media-padding-md();
   }
@@ -579,6 +587,9 @@ img {
 
   .blog {
     @include media-padding-md();
+    &__container {
+      margin: 0;
+    }
   }
   .article {
     margin-bottom: 20px;
@@ -589,6 +600,14 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .home {
+    &__content {
+      margin: 130px 0 180px;
+    }
+  }
+  .scroll {
+    bottom: 20px;
+  }
   .menu {
     margin-top: 20px;
   }
