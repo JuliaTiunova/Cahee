@@ -1,6 +1,8 @@
 @import "colors";
 @import "fonts";
 @import "normalize";
+@import "bootstrap-grid.min.scss";
+@import "bootstrap-utilities.min.scss";
 @mixin not-last {
   &:not(:last-child) {
     @content;
