@@ -13,6 +13,10 @@
   display: flex;
   flex-direction: column;
 }
+@mixin media-padding-md {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +55,7 @@
 a {
   text-decoration: none;
 }
-img {
+.image {
   width: 100%;
   height: 100%;
 }
@@ -86,8 +90,8 @@ img {
 
 .title {
   font-weight: bold;
-  font-size: 90px;
-  line-height: 106px;
+  font-size: $font-title;
+  line-height: $height-title;
 
   &--white {
     color: $secondary-text-color;
@@ -95,20 +99,20 @@ img {
 
   &--small {
     font-weight: 900;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: $font-title-small;
+    line-height: $height-title-small;
   }
   &--smaller {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: $font-title-smaller;
+    line-height: $height-title-smaller;
   }
 }
 
 .text {
   font-weight: 300;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: $font-text;
+  line-height: $height-text;
 
   &--white {
     color: $secondary-text-color;
@@ -280,7 +284,9 @@ img {
   &__container * {
     padding: 0;
   }
-
+  &__container {
+    margin-bottom: 50px;
+  }
   &__photo img {
     display: block;
     width: 100%;
@@ -290,9 +296,6 @@ img {
     @include flex-column();
     height: 100%;
     justify-content: space-between;
-  }
-  &__row-2 {
-    padding-bottom: 50px;
   }
   &__button {
     @include center();
@@ -500,7 +503,8 @@ img {
   }
   &__bottom-line {
     background-color: $primary-text-color;
-    padding: 36px 150px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
   &__author span {
     font-weight: 700;
@@ -530,20 +534,139 @@ img {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1399.98px) {
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199.98px) {
+  .home {
+    &__content {
+      margin: 130px 0 180px;
+    }
+  }
+  .scroll {
+    bottom: 20px;
+  }
   .menu {
-    display: none;
+    margin-top: 20px;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
+  .home {
+    &__content {
+      margin: 100px 0 150px;
+    }
+  }
+  .scroll {
+    display: none;
+  }
+  .services {
+    @include media-padding-md();
+
+    &__button {
+      font-size: 15px;
+      line-height: 20px;
+      height: 75px;
+    }
+    &__icon {
+      font-size: 32px;
+    }
+  }
+
+  .gallery {
+    @include media-padding-md();
+  }
+  .subscribe {
+    @include media-padding-md();
+  }
+  .blog {
+    @include media-padding-md();
+    &__container {
+      margin: 0;
+    }
+  }
+  .article {
+    margin-bottom: 20px;
+  }
+  .contact {
+    @include media-padding-md();
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767.98px) {
+  .title {
+    font-size: $font-title - 20px;
+    line-height: $height-title - 20px;
+
+    &--small {
+      font-size: $font-title-small - 10px;
+      line-height: $height-title-small - 10px;
+    }
+    &--smaller {
+      font-size: $font-title-smaller - 5px;
+      line-height: $height-title-small - 5px;
+    }
+  }
+
+  .text {
+    font-size: $font-text - 2px;
+    line-height: $height-text - 2px;
+  }
+  .services {
+    text-align: center;
+
+    &__menu {
+      margin-bottom: 30px;
+    }
+    &__icon {
+      font-size: 30px;
+    }
+  }
+  .subscribe {
+    text-align: center;
+    &__form input {
+      margin: 0;
+    }
+    &__button {
+      margin-top: 20px;
+    }
+  }
+  .gallery {
+    &__container {
+      margin-bottom: 15px;
+    }
+  }
+
+  .contact {
+    &__info {
+      margin-top: 20px;
+    }
+  }
+  .info-item {
+    margin-bottom: 0;
+  }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 575.98px) {
+  .menu {
+    display: none;
+  }
+  .title {
+    font-size: $font-title - 30px;
+    line-height: $height-title - 30px;
+
+    &--small {
+      font-size: $font-title-small - 15px;
+      line-height: $height-title-small - 15px;
+    }
+    &--smaller {
+      font-size: $font-title-smaller - 7px;
+      line-height: $height-title-smaller - 7px;
+    }
+  }
+
+  .text {
+    font-size: $font-text - 3px;
+    line-height: $height-text - 3px;
+  }
 }
