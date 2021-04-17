@@ -37,11 +37,6 @@
   padding-top: 50px;
   position: relative;
 
-  &__header {
-    display: flex;
-    align-items: center;
-  }
-
   &__content {
     color: $primary-text-color;
     margin-top: 280px;
@@ -536,6 +531,16 @@ a {
   }
 }
 
+.burger {
+  display: none;
+  outline: none;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 1399.98px) {
 }
 
@@ -558,6 +563,16 @@ a {
     display: none;
   }
   .home {
+    &__header {
+      background-color: #ffffff50;
+      height: 4rem;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
     &__content {
       margin: 100px 0 150px;
     }
