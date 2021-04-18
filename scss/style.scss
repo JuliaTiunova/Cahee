@@ -541,21 +541,22 @@ a {
   z-index: 1;
 
   span,
-  ::before,
-  ::after {
+  &::before,
+  &::after {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
     background-color: $primary-text-color;
+    transition: transform 0.6s;
   }
 
-  ::before {
+  &::before {
     top: 0;
     position: absolute;
   }
 
-  ::after {
+  &::after {
     bottom: 0;
     position: absolute;
   }
@@ -565,27 +566,99 @@ a {
   &-menu {
     position: fixed;
     top: 86px;
-    left: 0;
+    width: 300px;
     right: 0;
     bottom: 0;
-    background-color: transparentize($color: #ffffff, $amount: 0.3);
     z-index: 1;
+    pointer-events: none;
     display: none;
-    transition: opacity 0.3s;
-    opacity: 0;
   }
 
-  .menu-open & {
-    opacity: 1;
-  }
+  // .menu-open &-menu {
+  //   opacity: 1;
+  //   pointer-events: initial;
+  //   transform: translateX(0);
+  // }
+
   &__list {
-    margin: auto;
-    text-align: center;
+    margin: 0 auto;
     list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   &__item {
-    @include not-last() {
-      margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    border-bottom: 1px solid lighten($color: #ffe8db, $amount: 20%);
+    border-top: 1px solid lighten($color: #ffe8db, $amount: 20%);
+    border-right: 2px solid lighten($color: #ffe8db, $amount: 20%);
+    border-left: 2px solid lighten($color: #ffe8db, $amount: 20%);
+    transform: translateX(100%);
+    pointer-events: initial;
+
+    &--1 {
+      transition: all ease-in-out 0.2s;
+    }
+    &--2 {
+      transition: all ease-in-out 0.4s;
+    }
+    &--3 {
+      transition: all ease-in-out 0.6s;
+    }
+    &--4 {
+      transition: all ease-in-out 0.8s;
+    }
+    &--5 {
+      transition: all ease-in-out 1s;
+    }
+    &--6 {
+      transition: all ease-in-out 1.2s;
+    }
+  }
+}
+
+.menu-open {
+  .mobile__item {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .mobile__item--1 {
+    background: transparentize($color: #ffe8e8, $amount: 0.2);
+  }
+  .mobile__item--2 {
+    background-color: transparentize($color: #ffdbdb, $amount: 0.2);
+  }
+  .mobile__item--3 {
+    background-color: transparentize($color: #ffc8c8, $amount: 0.2);
+  }
+  .mobile__item--4 {
+    background-color: transparentize($color: #ffbcbc, $amount: 0.2);
+  }
+  .mobile__item--5 {
+    background-color: transparentize($color: #ff9e9e, $amount: 0.2);
+  }
+  .mobile__item--6 {
+    background-color: transparentize($color: #ff9090, $amount: 0.2);
+  }
+
+  .burger {
+    span {
+      opacity: 0;
+    }
+    &::before {
+      transform: rotate(45deg);
+      top: 11px;
+    }
+    &::after {
+      transform: rotate(-405deg);
+      bottom: 11px;
     }
   }
 }
@@ -602,7 +675,8 @@ a {
     }
 
     &__header {
-      background-color: transparentize($color: #ffffff, $amount: 0.3);
+      background-color: transparentize($color: #fdf3f3, $amount: 0.2);
+      border-bottom: 2px solid lighten($color: #ffe8db, $amount: 20%);
       position: fixed;
       z-index: 3;
       top: 0;
