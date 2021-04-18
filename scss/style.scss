@@ -571,6 +571,12 @@ a {
     background-color: transparentize($color: #ffffff, $amount: 0.3);
     z-index: 1;
     display: none;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  .menu-open & {
+    opacity: 1;
   }
   &__list {
     margin: auto;
