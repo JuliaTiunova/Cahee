@@ -566,9 +566,9 @@ a {
   &-menu {
     position: fixed;
     top: 86px;
-    width: 300px;
     right: 0;
     bottom: 0;
+    margin: 0;
     z-index: 1;
     pointer-events: none;
     display: none;
@@ -584,6 +584,7 @@ a {
     margin: 0 auto;
     list-style: none;
     text-align: center;
+    letter-spacing: 0.1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -592,7 +593,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 300px;
     height: 100%;
     margin: 0;
     opacity: 0;
@@ -667,6 +668,9 @@ a {
   .mobile {
     &-menu {
       display: flex;
+      &__item {
+        width: 300px;
+      }
     }
   }
   .home {
@@ -804,6 +808,9 @@ a {
 }
 
 @media (max-width: 575.98px) {
+  .mobile-item {
+    width: 200px;
+  }
   .title {
     font-size: $font-title - 30px;
     line-height: $height-title - 30px;
