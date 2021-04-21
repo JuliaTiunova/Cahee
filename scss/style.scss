@@ -641,6 +641,7 @@ a {
 
 .menu-open {
   .mobile__item {
+    overflow: hidden;
     opacity: 1;
     transform: translateX(0);
   }
@@ -721,6 +722,10 @@ a {
   }
   .services {
     @include media-padding-md();
+    &__title {
+      text-align: center;
+      font-size: $font-title - 20px;
+    }
 
     &__button {
       font-size: 15px;
@@ -769,8 +774,8 @@ a {
   }
 
   .text {
-    font-size: $font-text - 2px;
-    line-height: $height-text - 2px;
+    font-size: $font-text;
+    line-height: $height-text - 1px;
   }
   .services {
     text-align: center;
@@ -791,8 +796,19 @@ a {
     }
   }
   .subscribe {
-    background: none;
+    background: url(../img/subsc-bg-small.png) center center no-repeat;
+    background-size: contain;
     text-align: center;
+    // &__text {
+    //   .text {
+    //     font-weight: bolder;
+    //   }
+    // }
+
+    &__background {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
     &__form input {
       margin: 0;
     }
@@ -847,7 +863,7 @@ a {
   }
 
   .text {
-    font-size: $font-text - 3px;
+    font-size: $font-text - 1px;
     line-height: $height-text - 3px;
   }
   .about__img {

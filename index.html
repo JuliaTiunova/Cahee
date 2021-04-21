@@ -165,7 +165,7 @@
             <div class="services__image">
               <div class="row justify-content-around align-items-center">
                 <div
-                  class="col 12 order-2 order-md-1 col-md-4 col-lg-4 offset-1"
+                  class="col 12 order-2 order-md-1 col-md-5 col-lg-5 offset-lg-1"
                 >
                   <ul class="services__list list">
                     <li class="services__item">
@@ -196,7 +196,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-11 order-1 col-md-5 offset-1">
+                <div class="col-11 order-1 col-md-6 col-lg-5 offset-lg-1">
                   <div class="services__title">
                     <h2 class="title title--white">Our Services</h2>
                   </div>
@@ -230,11 +230,37 @@
               <div class="row gy-4">
                 <div class="col-12 col-md-8">
                   <div class="gallery__photo gallery__photo-1">
-                    <img
-                      class="image"
-                      src="img/gallery-img5.png"
-                      alt="peaches on a plate"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 576px)"
+                        srcset="
+                          img/gallery-img5-537w.png,
+                          img/gallery-img5-537w@2x.png 2x,
+                          img/gallery-img5-537w@3x.png 3x
+                        "
+                      />
+                      <source
+                        media="(max-width: 768px)"
+                        srcset="
+                          img/gallery-img5-515w.png,
+                          img/gallery-img5-515w@2x.png 2x,
+                          img/gallery-img5-515w@3x.png 3x
+                        "
+                      />
+                      <source
+                        media="(max-width: 991px)"
+                        srcset="
+                          img/gallery-img5-455w.png,
+                          img/gallery-img5-455w@2x.png 2x,
+                          img/gallery-img5-455w@3x.png 3x
+                        "
+                      />
+                      <img
+                        class="image"
+                        src="img/gallery-img5.png"
+                        alt="peaches on a plate"
+                      />
+                    </picture>
                   </div>
                 </div>
                 <div class="col-12 col-md-4">
@@ -262,6 +288,17 @@
                 <div class="col-6 gy-4">
                   <div class="gallery__photo gallery__photo-4">
                     <img
+                      srcset="
+                        img/gallery-img2-250w.png 250w,
+                        img/gallery-img2-336w.png 336w,
+                        img/gallery-img2-456w.png 456w,
+                        img/gallery-img2.png      546w
+                      "
+                      sizes="(max-width: 576px) 250px,
+                      (max-width: 767px) 336px,
+                      (max-width:991px) 456px,
+                      546px
+                      "
                       class="image"
                       src="img/gallery-img2.png"
                       alt="blueberries in shake"
@@ -271,6 +308,17 @@
                 <div class="col-6 gy-4">
                   <div class="gallery__photo gallery__photo-5">
                     <img
+                      srcset="
+                        img/gallery-img1-250w.png 250w,
+                        img/gallery-img1-336w.png 336w,
+                        img/gallery-img1-456w.png 456w,
+                        img/gallery-img1.png      546w
+                      "
+                      sizes="(max-width: 576px) 250px,
+                      (max-width: 767px) 336px,
+                      (max-width:991px) 456px,
+                      546px
+                      "
                       class="image"
                       src="img/gallery-img1.png"
                       alt="yellow tomato"
@@ -285,34 +333,36 @@
           </div>
         </section>
         <section class="subscribe">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="subscribe__content">
-                  <div class="subscribe__title">
-                    <h3 class="title--smaller">Subscribe To Us</h3>
-                  </div>
-                  <div class="subscribe__text">
-                    <p class="text">
-                      Dolor sit amet, consectetur adipisicing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam.
-                    </p>
+          <div class="subscribe__background">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="subscribe__content">
+                    <div class="subscribe__title">
+                      <h3 class="title--smaller">Subscribe To Us</h3>
+                    </div>
+                    <div class="subscribe__text">
+                      <p class="text">
+                        Dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-xl-8">
-                <form class="subscribe__form" action="#">
-                  <input type="email" placeholder="Your email address... " />
-                  <button
-                    type="submit"
-                    class="subscribe__button button button--green"
-                  >
-                    Subscribe
-                  </button>
-                </form>
+              <div class="row">
+                <div class="col-12 col-xl-8">
+                  <form class="subscribe__form" action="#">
+                    <input type="email" placeholder="Your email address... " />
+                    <button
+                      type="submit"
+                      class="subscribe__button button button--green"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
